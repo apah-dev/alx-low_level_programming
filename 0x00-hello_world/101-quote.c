@@ -1,11 +1,12 @@
 #include <stdio.h>
 /**
-  * Main - Entry Point
+  * main - Entry Point
   *
   * Return: Always 0 (Success)
   */
 int main(void)
 {
-	fprintf(stdout,"and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	char piece[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	fprintf(stdout, "%s\n", piece);
 	return (1);
 }
