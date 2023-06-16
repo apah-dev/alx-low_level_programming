@@ -1,24 +1,32 @@
 #include <stdio.h>
+
 /**
-  * main - Entry point
-  *
-  * Description: This program uses a while loop to generate
-  *		lowercase alphabets
-  * Return: Always 0 (Success)
-  */
+ * main - Entry point
+ *
+ * Description: This program prints all possible different combinations
+ *              of two two-digit numbers in ascending order.
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int first_digit;
-	int second_digit;
+	int num1;
+	int num2;
 
-	for (first_digit = 0; numbers <= 99; first_digit++)
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		printf("%d", numbers);
-
-		if (numbers < 9)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			putchar(',');
+			putchar('0' + num1 / 10);
+			putchar('0' + num1 % 10);
 			putchar(' ');
+			putchar('0' + num2 / 10);
+			putchar('0' + num2 % 10);
+
+			if (num1 < 98 || num2 < 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 
