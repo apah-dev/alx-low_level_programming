@@ -18,7 +18,7 @@ int main(void)
 		}
 		else
 		{
-			putchar('A' + base_sixteen - 10);
+			putchar('a' + base_sixteen - 10);
 		}
 	}
 
