@@ -6,14 +6,20 @@
   * using the defined putchar
   * Return: Always 0 (Success)
   */
-int main(void)
+void print_alphabet(void)
 {
 	char lowercase;
 
-	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
+	for(lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	{
 		_putchar(lowercase);
 	}
+
+	return (0);
+}
+int main(void)
+{
+	print_alphabet();
 
 	_putchar('\n');
 
