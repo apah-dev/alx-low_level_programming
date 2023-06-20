@@ -9,7 +9,7 @@
 void print_alphabet_x10(void)
 {
 	int lowercase;
-	int i;
+	int i = 0;
 
 	while (i <= 10)
 	{
