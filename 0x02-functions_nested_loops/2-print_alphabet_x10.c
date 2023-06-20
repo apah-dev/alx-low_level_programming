@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 	int lowercase;
 	int i = 0;
 
-	while (i <= 10)
+	for (i = 0; i <= 10; i++)
 	{
 		for (lowercase = 97; lowercase <= 122; lowercase++)
 		{
@@ -20,5 +20,5 @@ void print_alphabet_x10(void)
 
 		_putchar('\n');
 	}
-	i++;
+	
 }
