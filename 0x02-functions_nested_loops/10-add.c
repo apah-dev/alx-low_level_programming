@@ -5,11 +5,11 @@
  *
  * Return: result
  */
-int add(int, int)
+int add(int a, int b)
 {
 	int a, b;
 	int result;
 
 	result = a + b;
-	return (result)
+	return (result);
 }
