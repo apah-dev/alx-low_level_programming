@@ -23,8 +23,7 @@ void print_times_table(int n)
 				printf("%d", product);
 
 				if (column != n)
-					printf(",  ");
-					printf("  "
+					printf(",    ");
 			}
 
 			printf("\n");
