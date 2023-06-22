@@ -7,6 +7,7 @@ int _isupper(int letter);
 int _isdigit(int num);
 int mul(int num1, int num2);
 void _putchar(char c);
+void print_numbers(void);
 void print_line(int n);
 void print_diagonal(int n);
 void print_triangle(int size);
