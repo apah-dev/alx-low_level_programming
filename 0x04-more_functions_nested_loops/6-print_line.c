@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * print_line - uses the character _ to form a line.
-* @n: The number of times _ is printed 
+* @n: The number of times underscore is printed
 */
 void print_line(int n)
 {
