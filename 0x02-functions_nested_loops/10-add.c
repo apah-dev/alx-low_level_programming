@@ -11,6 +11,5 @@ int add(int, int)
 	int result;
 
 	result = a + b;
-	
-	return(result)
+	return (result)
 }
