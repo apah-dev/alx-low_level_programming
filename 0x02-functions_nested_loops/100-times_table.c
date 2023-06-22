@@ -11,23 +11,25 @@
 */
 void print_times_table(int n)
 {
-	if (n <= 15 && n >= 0)
+	if (n >= 0 && n <= 15)
 	{
-		int row, column, product;
+		int i, j, product;
 
-		for (row = 0; row <= n; row++)
+		for (i = 0; i <= n; i++)
 		{
-			for (column = 0; column <= n; column++)
+			for (j = 0; j <= n; j++)
 			{
-				product = row * column;
+				product = i * j;
 				printf("%d", product);
 
-				if (column != n)
-					printf(",   ");
+				if (j != n)
+				{
+					printf(", ");
+					if (product < 10)
+						printf(" ");
+				}
 			}
-
 			printf("\n");
 		}
 	}
 }
-
