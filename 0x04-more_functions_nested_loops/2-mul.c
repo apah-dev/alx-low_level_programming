@@ -4,7 +4,6 @@
  * mul - Returns the value of the multiplication of two numbers.
  * @a: The first value.
  * @b: The second value.
- * @result: The result of the multiplication returned.
  *
  * Return: 1 if @c is a digit, 0 otherwise.
  */
