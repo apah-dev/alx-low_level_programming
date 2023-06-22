@@ -1,35 +1,48 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
-* print_times_table - prints the n times table starting from 0
-* @n: number of times
+* print_times_table - prints the times table from 0 to a specified number
+* @n: the number to be specified
 *
-* Description: This function prints the multiplication table for the given
-* value of n. The table starts from 0 and goes up to n times.
-* If n is greater than 15 or less than 0, nothing is printed.
+* Description: This function prints the n times table, starting from 0,
+* up to the specified number of rows and columns (n). The table is printed
+* with equal spacing between the rows and columns.
 */
 void print_times_table(int n)
 {
+	int row, column, product;
+
 	if (n >= 0 && n <= 15)
 	{
-		int i, j, product;
-
-		for (i = 0; i <= n; i++)
+		for (row = 0; row <= n; row++)
 		{
-			for (j = 0; j <= n; j++)
+			_putchar('0');
+			for (column = 1; column <= n; column++)
 			{
-				product = i * j;
-				printf("%d", product);
-
-				if (j != n)
+				product = row * column;
+				_putchar(',');
+				_putchar(' ');
+				if (product <= 9)
 				{
-					printf(", ");
-					if (product < 10)
-						printf(" ");
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(product + '0');
+				}
+				else if (product <= 99)
+				{
+					_putchar(' ');
+					_putchar((product / 10) + '0');
+					_putchar((product % 10) + '0');
+				}
+				else
+				{
+				_putchar(((product / 100) % 10) + '0');
+				_putchar(((product / 10) % 10) + '0');
+				_putchar((product % 10) + '0');
 				}
 			}
-			printf("\n");
+		_putchar('\n');
 		}
 	}
 }
+
