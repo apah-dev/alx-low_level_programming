@@ -10,13 +10,13 @@ int main(void)
 	int count;
 	unsigned long fib1 = 1, fib2 = 2, fib_next;
 
-	printf("%lu", fib1);
+	printf("%lu, %lu", fib1, fib2);
 
-	for (count = 2; count <= 98; count++)
+	for (count = 3; count <= 98; count++)
 	{
-		printf(", %lu", fib2);
-
 		fib_next = fib1 + fib2;
+		printf(", %lu", fib_next);
+
 		fib1 = fib2;
 		fib2 = fib_next;
 	}
