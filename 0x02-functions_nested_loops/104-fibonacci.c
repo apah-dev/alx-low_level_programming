@@ -8,16 +8,15 @@
 int main(void)
 {
 	int count;
-	unsigned int fib1 = 1, fib2 = 2, fib_next;
+	unsigned long fib1 = 1, fib2 = 2, fib_next;
 
-	printf("%u, %u", fib1, fib2);
+	printf("%u", fib1);
 
-	for (count = 3; count <= 98; count++)
+	for (count = 2; count <= 98; count++)
 	{
+		printf(", %lu", fib2);
+
 		fib_next = fib1 + fib2;
-
-		printf(", %u", fib_next);
-
 		fib1 = fib2;
 		fib2 = fib_next;
 	}
