@@ -8,7 +8,6 @@
 */
 int main(void)
 {
-	int i;
 	unsigned long fib1 = 1, fib2 = 2, fib_next, sum = 2;
 
 	while (fib_next <= 4000000)
