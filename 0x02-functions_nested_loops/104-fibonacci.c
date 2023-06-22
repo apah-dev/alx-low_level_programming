@@ -16,13 +16,12 @@ int main(void)
 	{
 		fib_next = fib1 + fib2;
 
-		printf(", %lu", fib_next);
+		printf("%lu\n", fib_next);
 
 		fib1 = fib2;
 		fib2 = fib_next;
 	}
 
-	printf("\n");
 	return (0);
 }
 
