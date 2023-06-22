@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * print_square - prints a square as output.
-* @n: The number of times the hash is printed out.
+* @size: The number of times the hash is printed out.
 */
 void print_square(int size)
 {
