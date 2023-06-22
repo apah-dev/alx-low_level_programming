@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* main - Prints the sum of natural numbers below 1024 that are multiples of 3 or 5.
+* main - Prints sum of natural nums below 1024 that are multiples of 3 or 5.
 *
 * Return: Always 0.
 */
@@ -16,6 +16,5 @@ int main(void)
 	}
 
 	printf("%d\n", sum);
-	
 	return (0);
 }
