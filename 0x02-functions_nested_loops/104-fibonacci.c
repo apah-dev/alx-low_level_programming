@@ -10,7 +10,7 @@ int main(void)
 	int count;
 	unsigned long fib1 = 1, fib2 = 2, fib_next;
 
-	printf("%u", fib1);
+	printf("%lu", fib1);
 
 	for (count = 2; count <= 98; count++)
 	{
