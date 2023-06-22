@@ -3,7 +3,7 @@
 * print_diagonal - prints a diagonal shape.
 * @n: The number of times the shape should be printed.
 */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i;
 	int j;
@@ -12,7 +12,7 @@ void print_line(int n)
 	{
 		if (n > 1)
 		{
-			for(j = 0; j < i; j++)
+			for (j = 0; j < i; j++)
 				_putchar('_');
 			_putchar('\\');
 			_putchar('\n)';
