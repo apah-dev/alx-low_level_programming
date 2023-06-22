@@ -13,7 +13,7 @@ return putchar(c);
 int main(void)
 {
 	int i;
-	unsigned long long int fib1 = 1, fib2 = 2, fib_next;
+	unsigned long int fib1 = 1, fib2 = 2, fib_next;
 
 	_putchar(fib1 + '0');
 	_putchar(',');
