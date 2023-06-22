@@ -16,7 +16,8 @@ int main(void)
 	{
 		if (first % 2 == 0)
 		{
-			sum += first;
+			sum += first;i
+			printf("%lu, " first);
 		}
 		next = first + second;
 		first = second;
