@@ -24,6 +24,7 @@ void print_times_table(int n)
 
 				if (column != n)
 					printf(",  ");
+					printf("  "
 			}
 
 			printf("\n");
