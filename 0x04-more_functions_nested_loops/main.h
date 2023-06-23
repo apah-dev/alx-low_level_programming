@@ -8,6 +8,7 @@ int _isdigit(int num);
 int mul(int num1, int num2);
 void _putchar(char c);
 void print_numbers(void);
+void print_number(int n);
 void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
