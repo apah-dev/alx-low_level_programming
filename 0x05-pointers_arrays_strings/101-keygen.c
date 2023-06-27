@@ -1,52 +1,45 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
+#include <math.h>
 
 /**
-* main - generates a random password and validates it.
+* main - generate a random password.
 *
-* Return: 0 (Always Success)
+* Return: 0
 */
 int main(void)
 {
-	int sum = 2772;
-	int passwordLength = 0;
-	int random;
+	int total = 2772;
+	int count = 0;
+	int index, random;
 	char password[100];
 	time_t t;
 
-	srand((unsigned int)time(&t));
-	while (sum > 126)
+	srand((int)time(&t));
+	while (total > 126)
 	{
 		random = rand() % 126;
-		password[passwordLength] = random;
-		sum -= random;
-		passwordLength++;
+		password[count] = random;
+		total -= random;
+		count++;
 	}
 
-	if (sum > 0)
+	if (total > 0)
 	{
-		password[passwordLength] = sum;
-		passwordLength++;
+		password[count] = total;
+		count++;
 	}
 	else
 	{
-		passwordLength--;
+		count--;
 	}
 
-	password[passwordLength] = '\0';
-
-	printf("Password: %s\n", password);
-
-	if (strcmp(password, "valid_password") == 0)
+	for (index = 0; index <= count; index++)
 	{
-	printf("Tada! Congrats\n");
+		printf("%c", password[index]);
 	}
-	else
-	{
-	printf("Wrong password\n");
-	}
+	printf("\n");
 
 	return (0);
 }
