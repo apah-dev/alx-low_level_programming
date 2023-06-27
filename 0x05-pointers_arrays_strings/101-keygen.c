@@ -15,9 +15,9 @@ char *generate_password()
 
 	for (i = 0; i < 6; i++)
 	{
-		password[i] = rand() % 26 + 'A'; // Generating random uppercase letters
+		password[i] = rand() % 26 + 'A';
 	}
-	password[6] = '\0'; // Null terminator
+	password[6] = '\0';
 
 	return (password);
 }
