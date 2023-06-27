@@ -4,8 +4,8 @@
 #include <string.h>
 
 /**
-* main - Entry point
-* generate_password - generates a random password
+* main - Entry point.
+* generate_password - generates a random password.
 * @length: length of the password
 * Return: pointer to the generated password
 **/
