@@ -34,7 +34,7 @@ int main(void)
 		passwordLength--;
 	}
 
-	password[passwordLength] = '\0'; // Null-terminate the password
+	password[passwordLength] = '\0';
 
 	printf("Password: %s\n", password);
 
