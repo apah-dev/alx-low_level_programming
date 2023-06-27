@@ -32,6 +32,15 @@ int main(void)
 
 	printf("Password: %s\n", password);
 
+	if (strcmp(password, "valid_password") == 0)
+	{
+		printf("Tada! Congrats\n");
+	}
+	else
+	{
+		printf("Wrong password\n");
+	}
+
 	free(password);
 
 	return (0);
