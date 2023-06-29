@@ -24,7 +24,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		carry = sum / 10;
 
 		if (i >= size_r - 1 || carry > 0)
+		{
 			return (0);
+		}
 
 		r[i] = sum % 10 + '0';
 		i++;
