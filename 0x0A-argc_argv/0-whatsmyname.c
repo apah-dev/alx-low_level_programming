@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * whatsmyname - Prints the program name
+ * @name: Name of the program
  */
-int main(int argc, char *argv[])
+void whatsmyname(char *name)
 {
-	char *program_name = argv[0];
+	int i = 0;
 
-	print_program_name(program_name);
-
-	return (0);
+	while (name[i] != '\0')
+	{
+		_putchar(name[i]);
+		i++;
+	}
+	_putchar('\n');
 }

@@ -1,2 +1,2 @@
-void print_program_name(char *name);
+void whatsmyname(char *name);
 int _putchar(char c);
